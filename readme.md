@@ -2,4 +2,4 @@
 
 +
 
-It is my **first application** with laravel.
+It is my **first application** with laravel. May not have followed best practices yet.
