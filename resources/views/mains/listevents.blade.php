@@ -44,7 +44,9 @@
 
                                  
                                   <td>{{$posts->title}}</td>                       
-                                  <td>{{$posts->body}}</td>
+                                  <td>{{strip_tags(str_limit($posts->body, 50, '...'))}}</td>
+
+
                                   <td>{{$posts->venue}}</td>
                                   <td>{{$posts->date->toFormattedDateString()}}</td>
                                   <td>{{$posts->created_at->toFormattedDateString()}}</td>

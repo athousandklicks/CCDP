@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Main;
 use Session;
+use Purifier;
 
 class mainController extends Controller
 {
@@ -58,7 +59,7 @@ class mainController extends Controller
         //Store into the database
         $main = new Main; //create a new object of the Model you created. Also remember to include the class - use App\Main
         $main -> title = $request -> title; //assign the title
-        $main -> body = $request -> body; //assign the body
+        $main -> body = Purifier::clean($request -> body); //assign the body
         $main -> page_name = $request -> page_name; //assign the body
 
         $main -> save(); //save to the database
@@ -116,7 +117,7 @@ class mainController extends Controller
         $main = Main::find($id);
 
         $main -> title = $request->input('title');
-        $main -> body = $request->input('body');
+        $main -> body = Purifier::clean($request->input('body'));
 
         $main -> save(); //save to the database
 

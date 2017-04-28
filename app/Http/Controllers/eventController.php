@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Event;
 use Session;
 use Image;
+use Purifier;
 //use File;
 
 
@@ -62,7 +63,7 @@ class eventController extends Controller
         //Store into the database
         $event = new Event; //create a new object of the Model you created. Also remember to include the class - use App\event
         $event -> title = $request -> title; //assign the title
-        $event -> body = $request -> body; //assign the body
+        $event -> body = Purifier::clean($request -> body); //assign the body
         $event -> venue = $request -> venue; //assign the body
         $event -> date = $request -> date; //assign the body
         $event -> end_date = $request -> end_date; //assign the body
@@ -138,7 +139,7 @@ class eventController extends Controller
 //      Also remember to include the class - use App\event
         $event = Event::find($id); //find the object using the ID
         $event -> title = $request -> title; //assign the title
-        $event -> body = $request -> body; //assign the body
+        $event -> body = Purifier::clean($request -> body); //assign the body
         $event -> venue = $request -> venue; //assign the body
         $event -> date = $request -> date; //assign the body
         $event -> end_date = $request -> end_date; //assign the body

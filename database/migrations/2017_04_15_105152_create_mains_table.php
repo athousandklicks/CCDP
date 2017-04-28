@@ -17,7 +17,7 @@ class CreateMainsTable extends Migration
             $table->increments('id');
             $table->string('page_name');
             $table->string('title');
-            $table->string('body');
+            $table->text('body');
             $table->timestamps();
         });
     }

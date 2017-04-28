@@ -2,6 +2,19 @@
 
 @section('title', '| Edit Page')
 
+@section('links')
+
+ 	<script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+
+ 	<script>
+ 		tinymce.init({
+		  selector: 'textarea',  // change this value according to your HTML
+
+		  plugins: 'link autoresize hr spellchecker searchreplace advlist lists table textcolor textpattern wordcount textcolor colorpicker anchor insertdatetime media'
+		});
+ 	</script>
+
+ @endsection
 
 
 @section('content')
@@ -28,7 +41,7 @@
 					{{ Form::text('title', null, array('class'=>'form-control', 'required' => '', 'maxlength'=>'255')) }}
 
 					{{ Form::label('body', 'Event Details:') }}
-					{{ Form::text('body', null, array('class'=>'form-control', 'required' => '', 'maxlength'=>'1000')) }}
+					{{ Form::textarea('body', null, array('class'=>'form-control', 'maxlength'=>'1000')) }}
 
 					{{ Form::label('venue', 'Event Location:') }}
 					{{ Form::text('venue', null, array('class'=>'form-control', 'required' => '', 'maxlength'=>'1000')) }}

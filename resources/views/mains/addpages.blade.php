@@ -2,7 +2,19 @@
 
 @section('title', '| Add Pages')
 
+@section('links')
 
+ 	<script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+
+ 	<script>
+ 		tinymce.init({
+		  selector: 'textarea',  // change this value according to your HTML
+
+		  plugins: 'link autoresize hr spellchecker searchreplace advlist lists table textcolor textpattern wordcount textcolor colorpicker anchor insertdatetime media'
+		});
+ 	</script>
+
+ @endsection
 
 @section('content')
 
@@ -31,7 +43,7 @@
 					{{ Form::text('title', null, array('class'=>'form-control', 'required' => '', 'maxlength'=>'255')) }}
 
 					{{ Form::label('body', 'Page Details:') }}
-					{{ Form::textarea('body', null, array('class'=>'form-control', 'required' => '')) }}
+					{{ Form::textarea('body', null, array('class'=>'form-control')) }}
 
 					{{ Form::submit('Create Page', array('class'=>'btn btn-success btn-lg', 'style' => 'margin-top: 20px;' )) }}
 					{!! Form::close() !!}

@@ -10,7 +10,7 @@
     <div class="blank">
     	<h2>{{$main->title}}</h2>
     	<div class="blankpage-main">
-    		<p>{{$main->body}} </p>
+    		<p>{!!$main->body!!} </p>
     	</div>
 	<hr>
     	<div>

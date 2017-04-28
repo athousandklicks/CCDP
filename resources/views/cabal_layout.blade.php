@@ -3,6 +3,8 @@
 
 	<head>
 		@include('partials._cabalhead')
+
+		@yield('links')
 	</head>
 
 	<body>

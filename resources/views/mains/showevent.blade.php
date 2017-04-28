@@ -29,7 +29,7 @@
 					<h1>Event Title: {{$event->title}}</h1>
 
 					<div class="well well-sm">
-						<p><b>Event Details:</b> {{$event->body}}</p>
+						<p><b>Event Details:</b> {!!$event->body!!}</p>
 					</div>
 
 					<div class="well well-sm"> 

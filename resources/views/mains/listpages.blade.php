@@ -39,7 +39,10 @@
                                   <td>{{$page->id}}</td>
                                   <td>{{$page->page_name}}</td>
                                   <td>{{$page->title}}</td>                       
-                                  <td>{{$page->body}}</td>
+                                  <td>{{strip_tags(str_limit($page->body, 200, '...'))}}</td>
+
+  
+
                                   <td>{{$page->created_at->toFormattedDateString()}}</td>
                                   <td>{{$page->updated_at->toFormattedDateString()}}
                                   </td>
