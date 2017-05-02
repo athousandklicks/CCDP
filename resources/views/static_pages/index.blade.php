@@ -24,10 +24,11 @@
                     </div>
                     <div id="main-content">
                         <article id="intro">
-                            <h1>Welcome to CCDP</h1>
+                            @foreach($index as $posts)
+                                <h1>{!!$posts->title!!}</h1>
                            
-                            <p>COCIN Community Development Programme [CCDP] is the development arm of Church of Christ in Nations [COCIN] which started in 1997 with the merger of the former Rural Health Programme [RHP] and Rural Development Programme [RDP] to deliver community–based Integrated Wholistic development services to communities.</p>
-                            
+                                <p>{!!$posts->body!!}</p>
+                            @endforeach
                         </article>
 
                     </div>

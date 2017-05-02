@@ -19,6 +19,8 @@
 
 {{Html::script('js/skycons.js')}}
 
+@yield('parsley_stylesheet')
+
 
 <!--js-->
 <script src="js/jquery-2.1.1.min.js"></script> 

@@ -1785,7 +1785,7 @@ html[xmlns] .slides {display: block;}
     color:#2d548d;
 }
 .event-container {
-    width:250px;
+    width:243px;
     height:335px;
     float:left;
     margin:0 25px 25px 0;
@@ -2204,6 +2204,23 @@ html[xmlns] .slides {display: block;}
 
 /* Widget
 =====================================================================*/
+#paginate {
+    width:800px;
+    background:#f0f0f0;
+    padding:20px 20px 0 20px;
+}
+
+#paginate .widget-container {
+    background:#fff;
+    margin:0 0 20px 0;
+    padding:0 20px 20px 20px;
+}
+
+#paginate .widget-title {
+    width:600px
+}
+
+
 #sidebar .widget-container {
     background:#fff;
     margin:0 0 20px 0;

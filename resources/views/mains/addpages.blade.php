@@ -4,33 +4,33 @@
 
 @section('links')
 
- 	<script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+<script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
 
- 	<script>
- 		tinymce.init({
+<script>
+	tinymce.init({
 		  selector: 'textarea',  // change this value according to your HTML
 
 		  plugins: 'link autoresize hr spellchecker searchreplace advlist lists table textcolor textpattern wordcount textcolor colorpicker anchor insertdatetime media'
 		});
- 	</script>
+	</script>
 
- @endsection
+	@endsection
 
-@section('content')
+	@section('content')
 
 	
-	    <div class="inbox">
-    	  <h2>Create New Page </h2>
-  	 
-    	 	<div class="col-md-12 compose-right">
-					<div class="inbox-details-default">
-						<div class="inbox-details-heading">
-							
-						</div>
-						<div class="inbox-details-body">
-							<div class="alert alert-info">
-								Please all fields are required in order to add new page
-							</div>
+	<div class="inbox">
+		<h2>Create New Page </h2>
+		
+		<div class="col-md-12 compose-right">
+			<div class="inbox-details-default">
+				<div class="inbox-details-heading">
+					
+				</div>
+				<div class="inbox-details-body">
+					<div class="alert alert-info">
+						Please all fields are required in order to add new page
+					</div>
 
 					{!! Form::open(array('route' => 'mains.store')) !!}
 
@@ -49,12 +49,12 @@
 					{!! Form::close() !!}
 
 
-						</div>
-					</div>
 				</div>
-    	
-          <div class="clearfix"> </div>     
-   </div>
+			</div>
+		</div>
+		
+		<div class="clearfix"> </div>     
+	</div>
 
 
-@endsection
+	@endsection

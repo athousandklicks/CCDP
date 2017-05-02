@@ -42,7 +42,7 @@
 
 
 					{{Form::label('page_name', 'Page Name:')}}
-					{{ Form::text('page_name', null, ['class'=>'form-control', 'required' => '', 'maxlength'=>'255'])}}
+					{{ Form::text('page_name', null, ['class'=>'form-control', 'required' => '', 'maxlength'=>'255', 'readonly'])}}
 
 					{{ Form::label('title', 'Title:') }}
 					{{ Form::text('title', null, array('class'=>'form-control', 'required' => '', 'maxlength'=>'255')) }}

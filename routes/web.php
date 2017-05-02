@@ -16,10 +16,14 @@ Route::group(['middleware' => ['web']], function(){
 		Route::get('/', 'staticPagesController@getIndex');
 		Route::get('about', 'staticPagesController@getAbout');
 		Route::get('programmes', 'staticPagesController@getProgrammes');	
-		Route::get('events', 'staticPagesController@getEvents');
+		Route::get('event', 'staticPagesController@getEvents');
 		Route::get('portfolio', 'staticPagesController@getPortfolio');
 		Route::get('gallery', 'staticPagesController@getGallery');
 		Route::get('contact', 'staticPagesController@getContact');
+
+
+		//Custom Routes for event details
+		Route::get('event/{details}', ['uses'=>'staticPagesController@getEventDetails', 'as' =>'static_pages.eventdetails']);
 
 
 		Route::resource('events', 'eventController');
@@ -34,4 +38,4 @@ Route::group(['middleware' => ['web']], function(){
 
 Auth::routes();
 
-Route::get('/', 'adminHomeController@index');
+Route::get('/admin', 'adminHomeController@index');

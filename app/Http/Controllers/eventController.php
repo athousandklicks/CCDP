@@ -56,7 +56,7 @@ class eventController extends Controller
             'body'  => 'required',
             'venue'  => 'required|max:1000',
             'date'  => 'required|max:25',
-            'time'  => 'required|max:25'
+            'time'  => 'required', ['\b((1[0-2]|0?[1-9]):([0-5][0-9]) ([AaPp][Mm]))']
 
             ));
 

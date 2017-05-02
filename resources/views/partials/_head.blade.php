@@ -18,11 +18,6 @@
     <link rel="stylesheet" type="text/css" media="all" href="css/stylemobile.css" />
 
 
-
-
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 <!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
 <!--js-->
@@ -34,12 +29,6 @@
 <link href='//fonts.googleapis.com/css?family=Work+Sans:400,500,600' rel='stylesheet' type='text/css'>
 
 
-
-
-
-
-
-    
     <!-- <link rel="stylesheet" type="text/css" media="all" href="style/mobilenavigation.css" /> -->
     <script src="js/modernizr.js" type="text/javascript"></script>
     <script src="js/jquery.js" type="text/javascript"></script>
@@ -65,7 +54,7 @@
                         </div>
                     </form>
                     <ul id="nav-header">
-                        <li><a href="events">Upcoming Events</a></li>
+                        <li><a href="event">Upcoming Events</a></li>
                         <li><a href="contact">Contact CCDP Today</a></li>
                     </ul>
                     <h3 id="slogan">“Empowered communities championing their development sustainably”</h3>
