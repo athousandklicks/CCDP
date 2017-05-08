@@ -66,8 +66,9 @@ public function getIndex()
 
    public function getEventDetails($id)
     {
+      $event = Event::all();
       $event_details = Event::where('id', '=', $id)->first();
-      return view('static_pages.eventdetails', compact('event_details'));
+      return view('static_pages.eventdetails', compact('event_details', 'event'));
     }
 
 }

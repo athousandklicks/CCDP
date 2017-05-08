@@ -1,4 +1,4 @@
-<footer id="main-footer" style="background:url(images/footer.jpg) no-repeat 50% 0;">
+<footer id="main-footer" style="background:url(/images/footer.png) no-repeat 100% 0;">
         <div id="blur-top">
             <a href="#" id="link-back-top">Back to Top</a>
         </div>
@@ -12,10 +12,10 @@
                         <div class="widget-wrapper clearfix">
                             <h3 class="widget-title">Quick Navigation</h3>
                             <ul>
-                                <li><a href="about">About CCDP</a></li>
-                                <li><a href="events">Events</a></li>
-                                <li><a href="programmes">Programmes</a></li>
-                                <li><a href="portfolio">Portfolio</a></li>
+                                <li><a href="/about">About CCDP</a></li>
+                                <li><a href="/event">Events</a></li>
+                                <li><a href="/programmes">Programmes</a></li>
+                                <li><a href="/portfolio">Portfolio</a></li>
                             </ul>
                         </div>
                     </aside>
@@ -48,7 +48,7 @@
         </div>
         <div id="footer-copyright">
             <div id="footer-copyright-content" class="clearfix">
-                <a href="#" id="logo-footer"><img src="images/logo-footer.png" data-retina="images/logo-footer-retina.png" alt="School Fun - University" /></a>
+                <a href="#" id="logo-footer"><img src="/images/logo-footer.png" alt="CCDP" /></a>
                 <p id="text-address">COCIN, PMB 2127, No #5 Noad Avenue Jos, Plateau State, Nigeria. </p>
 
                 <p id="text-copyright">Copyright &copy; 2017. All rights reserved</p>

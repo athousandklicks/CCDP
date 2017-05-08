@@ -23,7 +23,7 @@ Route::group(['middleware' => ['web']], function(){
 
 
 		//Custom Routes for event details
-		Route::get('event/{details}', ['uses'=>'staticPagesController@getEventDetails', 'as' =>'static_pages.eventdetails']);
+		Route::get('event/{details}', ['uses'=>'staticPagesController@getEventDetails', 'as' =>'static_pages.eventdetails'])->where('details', '[\w\d\-\_]+');
 
 
 		Route::resource('events', 'eventController');

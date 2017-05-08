@@ -19,9 +19,7 @@
 
             <div id="content-container">
                 <div id="content" class="clearfix">
-                    <div id="banner-homepage">
-                        <a href="#"><img src="images/info.jpg" alt="" /></a>
-                    </div>
+
                     <div id="main-content">
                         <article id="intro">
                             @foreach($index as $posts)
@@ -45,7 +43,7 @@
                     <article id="intro-principal" class="static-page">
                         <h3 id="title-principal"><strong>COCIN Community Development Programme [CCDP]  - </strong> Panyam</h3>
                         <figure>
-                            <img src="images/side.jpg" />
+                            <img src="images/side.png" />
                         </figure>
                         <div id="content-principal">
                             <p><strong>Our Identity: </strong> CCDP is a Christian Wholistic Development arm of COCIN that empowers less privileged communities for secured livelihoods and peaceful co-existence as a demonstration of the love of Jesus Christ.</p>

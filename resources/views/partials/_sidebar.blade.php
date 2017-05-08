@@ -8,7 +8,7 @@
             <li class="clearfix">
                 <div class="event-date-widget">
                     <strong>{{$posts->created_at->toFormattedDateString()}}</strong>
-                    <span>Nov</span>
+                  
                 </div>
                 <div class="event-content-widget">
                     <article>
@@ -25,6 +25,6 @@
 
 
         </ul>
-        <a href="events" class="button-more">More Event</a>
+        <a href="event" class="button-more">More Event</a>
     </div>
 </aside>

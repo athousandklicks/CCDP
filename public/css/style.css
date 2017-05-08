@@ -507,10 +507,10 @@ nav#nav li li:hover ul
     padding:0 2px 0 0;
 }
 .nav-tabs-slideshow li a {
-    height:63px;
+    height:85px;
     width:173px;
     float:left;
-    padding:25px 25px 0 25px;
+    padding:0 25px 0 25px;
     text-decoration:none;
     color:#fff;
     line-height:1.4;
@@ -520,8 +520,29 @@ nav#nav li li:hover ul
 	-o-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 }
+
+.nav-tabs-slideshow p {
+    height:70px;
+    width:850px;
+    padding:15 25px 0 25px;
+    text-decoration:none;
+    text-align: center;
+    color:#fff;
+    line-height:1.4;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+}
+
+.nav-tabs-slideshow p strong {
+    font-size:24px;
+    text-transform:uppercase;
+}
+
 .nav-tabs-slideshow li a strong {
-    font-size:14px;
+    font-size:64px;
     text-transform:uppercase;
 }
 .nav-tabs-slideshow li a span {
@@ -2528,9 +2549,9 @@ html[xmlns] .slides {display: block;}
 .sidebar-homepage .event-date-widget strong,
 #sidebar .event-date-widget strong {
     display:block;
-    font-size:36px;
+    font-size:18px;
     color:#fff;
-    padding:12px 0 0 0;
+    padding:13px 1px 0 0;
 }
 .sidebar-homepage .event-date-widget span,
 #sidebar .event-date-widget span {
