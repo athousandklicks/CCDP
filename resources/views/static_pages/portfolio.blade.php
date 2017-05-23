@@ -11,19 +11,11 @@
 
             <article class="static-page">
 
-            @foreach($post as $posts)
-
-                <h1 id="main-title">{!!$posts->title!!}</h1>
-
-                <p>{!!$posts->body!!}</p>
-
-                <p><strong>Collaborating Partners are:</strong> </p>
-                <ul>
-                    <li>Bread for the World, Germany.</li>
-                    <li>Tearfund, UK.</li>
-                    <li>OXFAM GB.</li>
-                </ul>
+                @foreach($post as $posts)
+                    <h1 id="main-title">{!!$posts->title!!}</h1>
+                    <p>{!!$posts->body!!}</p>
                 @endforeach
+                
                 <div class="clear"></div>
             </article>
         </div>

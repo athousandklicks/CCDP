@@ -1,16 +1,15 @@
 
 					<div class="header-left">
 							<div class="logo-name">
-									 <a href="index.html"> <h1>CCDP Admin</h1> 
+									 <a href="/"> <h1>CCDP Admin</h1> 
 
 								  </a> 								
 							</div>
-							<!--search-box-->
-								<div class="">
 
-								</div><!--//end-search-box-->
 							<div class="clearfix"> </div>
 						 </div>
+
+
 						 <div class="header-right">
 							<div class="profile_details_left"><!--notifications of menu start -->
 								
@@ -54,5 +53,6 @@
 							<div class="clearfix"> </div>				
 						</div>
 				     <div class="clearfix"> </div>	
+
 				
 <!--header end here-->

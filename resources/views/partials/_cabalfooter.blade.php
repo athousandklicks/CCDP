@@ -1,5 +1,5 @@
 <div class="copyrights">
-	 <p>© 2016 Shoppy. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+	 <p>© 2017 COCIN COmmunity Development Programme | Design by  <a href="http://bagus.com.ng" target="_blank">athousandklicks</a> </p>
 </div>	
 
 <!--COPY rights end here-->

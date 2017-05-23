@@ -13,7 +13,7 @@
 
 Route::group(['middleware' => ['web']], function(){
 
-		Route::get('/', 'staticPagesController@getIndex');
+		Route::get('/', 'staticPagesController@getIndex')->name('static_pages.index');
 		Route::get('about', 'staticPagesController@getAbout');
 		Route::get('programmes', 'staticPagesController@getProgrammes');	
 		Route::get('event', 'staticPagesController@getEvents');

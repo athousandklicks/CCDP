@@ -15,7 +15,7 @@
 
 					<div class="header-main">
 					<!--place cabal top nav underneath this comment start here-->
-						@include('partials._cabaltopnav')
+					{{--	@include('partials._cabaltopnav') --}}
 					</div> <!--header-main ends here-->
 
 		<!-- script-for sticky-nav (_cabal top nav javascript partial) -->

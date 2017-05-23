@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Home;
+use App\Main;
+use App\Event;
+use App\Gallery;
+use App\Slide;
 use Session;
 
 class adminHomeController extends Controller
@@ -21,9 +25,14 @@ class adminHomeController extends Controller
      */
     public function index()
     {
-        $main = Home::all();
+        $home = Home::all();
+        $event = Event::all();
+        $slide = Slide::all();
+        $gallery = Gallery::all();
+        $main = Main::all();
          //return a view 
-        return view('mains.index');
+        return view('mains.index', compact('event','slide','gallery',
+            'main', 'home'));
     }
 
     /**
@@ -88,6 +97,12 @@ class adminHomeController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
+    {
+        //
+    }
+
+
+        public function getDbStats()
     {
         //
     }
