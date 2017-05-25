@@ -12,13 +12,10 @@
                 </div>
                 <div class="event-content-widget">
                     <article>
-                        <h4><a href="#">Musicfest 2013</a></h4>
-                        <p>{{$posts->body}}
-                        </p>
-                        <em>Venue: </em>
+                        <h4><a href="#">{!!$posts->title!!}</a></h4>
+                        <p>{!!$posts->body!!}</p>
+                        <em>Venue: {!!$posts->venue!!}</em>
                     </article>
-                    <article>
-
                 </div>
             </li>
 @endforeach
