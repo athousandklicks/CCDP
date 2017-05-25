@@ -20,6 +20,7 @@ Route::group(['middleware' => ['web']], function(){
 		Route::get('portfolio', 'staticPagesController@getPortfolio');
 		Route::get('gallery', 'staticPagesController@getGallery');
 		Route::get('contact', 'staticPagesController@getContact');
+		Route::post('contact', 'staticPagesController@postContact');
 
 
 		//Custom Routes for event details

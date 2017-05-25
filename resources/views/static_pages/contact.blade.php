@@ -41,16 +41,22 @@
                     <div class="clear"></div>
                    
                     <h2>Contact Form</h2>
-                    <form method="post" action="#" id="form-contact" class="clearfix">
+                    <form method="POST" action="{{ url('contact') }}" id="form-contact" class="clearfix">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <div>
                             <label for="text-name">Name <span>*</span></label>
                             <input type="text" name="name" class="input" id="text-name" value="" /><br />
-                            <label for="text-email">Email</label>
+
+                            <label for="text-email">Email <span>*</span></label>
                             <input type="text" name="email" class="input" id="text-email" value="" /><br />
-                            <label for="text-phone">Phone</label>
-                            <input type="text" name="phone" class="input" id="text-phone" value="" /><br />
+
+                            <label for="text-phone">Subject <span>*</span></label>
+                            <input type="text" name="subject" class="input" id="text-phone" value="" /><br />
+
                             <label for="text-message">Message <span>*</span></label>
+
                             <textarea cols="10" rows="20" class="input textarea" id="text-message" name="message"></textarea><br />
+
                             <input type="submit" name="submitcontact" class="button" value="Sent Message" />
                         </div>
                     </form>
