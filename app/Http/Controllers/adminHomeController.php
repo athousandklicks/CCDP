@@ -8,6 +8,7 @@ use App\Main;
 use App\Event;
 use App\Gallery;
 use App\Slide;
+use App\User;
 use Session;
 
 class adminHomeController extends Controller
@@ -30,9 +31,15 @@ class adminHomeController extends Controller
         $slide = Slide::all();
         $gallery = Gallery::all();
         $main = Main::all();
+        $admin = User::all();
          //return a view 
         return view('mains.index', compact('event','slide','gallery',
-            'main', 'home'));
+            'main', 'home', 'admin'));
+    }
+
+    public function permission(){
+        $admin = User::all();
+        return view('partials.cabalsidenav', compact('admin'));
     }
 
     /**
@@ -42,7 +49,8 @@ class adminHomeController extends Controller
      */
     public function create()
     {
-        //
+        $admin = User::all();
+        return view('partials.cabalsidenav', compact('admin'));
     }
 
     /**

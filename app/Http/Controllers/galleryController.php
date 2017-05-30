@@ -41,6 +41,7 @@ class galleryController extends Controller
      */
     public function store(Request $request)
     {
+
                                 //validate data entry
         $this->validate($request, array(
             'title' => 'required|max:255',
@@ -59,7 +60,7 @@ class galleryController extends Controller
             Image::make($image)->resize(800, 400)->save($location); //Make the image with the help of the image intervention library added to the project thru composer from image.intervention.io
 
             $gallery -> img_scr = $filename; //save filename to DB
-            }
+        }
 
 
         $gallery -> save(); //save to the database
